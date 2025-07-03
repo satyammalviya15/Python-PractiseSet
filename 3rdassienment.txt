@@ -1,0 +1,98 @@
+""1) Create a list with the following values: 56.7,78,45.3,89,19.9,32.9,10.0,22.1,45.9,55.6
+
+	Output the result as follows:
+
+	The average of Player 1 is : 56.7
+	The average of Player 2 is : 78
+	.......
+	.......
+	The average of Player 10 is : 55.6
+ans""
+
+avg=[56.7,78,45.3,89,19.9,32.9,10.0,22.1,45.9,55.6]
+for i in range(1,10):
+ print("The average of player {} is : {}".format(i,avg[i-1]))
+
+""----------------------------------------------------------------------------------------------------------
+2) Create a list with these values:
+		'computer+program', 'new+delhi', 'artificial+intelligence', 'sea+facing', 'bungalow+society',
+		'software+engineer', 'highspeed+internet', 'slow+coach', 'high+density', 'clear+weather'
+
+	Output to be in the format
+		Computer Program
+		New Delhi
+		......
+ans""
+list=['computer+program', 'new+delhi', 'artificial+intelligence', 'sea+facing', 'bungalow+society','software+engineer', 'highspeed+internet', 'slow+coach', 'high+density', 'clear+weather']
+for i in list:
+ print(i.replace('+',' '))
+
+""----------------------------------------------------------------------------------------------------------
+3) Create two empty lists 'odd_list', 'even_list'
+	Using a loop, fill the 
+		'odd_list'  with odd values between 1-100 and 
+		'even_list' with even values between 1-100
+ans""
+
+ even=[]
+ odd=[]
+ for i in range(1,50):
+  even.append(2*i)
+ for j in range(1,49):
+  odd.append((2*i)+1)
+ for k in range(0,49):
+   print(odd[k])
+   print(even[k])
+
+""----------------------------------------------------------------------------------------------------------
+4) Create a list with random occurances of the values 
+	"data", science", "machine", "learning" (Do not hardcode)
+
+   Find the count of each word
+ans""
+
+value=['data', 'science', 'machine', 'learning']
+for i in range(4):
+ print(len(value[i]))
+
+""----------------------------------------------------------------------------------------------------------
+5) create 2 numeric lists having 1,2 and 3 digit numbers. (selected at random)
+   The lists need not have the same count of numbers.
+
+   Your task is to multiply 
+   		all 1-digit number of list1 with all 1-digit numbers of list2
+   		all 2-digit numbers of list1 with all 2-digit numbers of list2
+   		all 3-digit numbers of list1 with all 3-digit numbers of list2
+
+   	eg: list1 = [1,5,102,45,100,75]
+   		list2 = [15,239,6]
+
+   		expected output
+   		---------------
+   		1*6 = 6
+   		5*6 = 30
+   		102*239 = 24378
+   		100*239 = 23900
+   		45*15 = 675
+   		75*15 = 1125
+ans""
+""
+----------------------------------------------------------------------------------------------------------
+6) A list contains the email IDs of employees of different organisations in the following format:
+	<firstname>.<lastname>@<domain>
+
+	apashabi.pathan@mycompany.net
+	savitri.patil@myplace.in
+	sarita.patil@mycompany.in
+	shabda.singh@office.com
+	priya.kumar@theoffice.in
+	naresh.swami@wfh.co.in
+	ganesh.sakhare@mycompany.net
+
+	
+	Print all the employee names
+ans""
+list=['apashabi.pathan@mycompany.net','savitri.patil@myplace.in','sarita.patil@mycompany.in',
+      'shabda.singh@office.com','priya.kumar@theoffice.in','naresh.swami@wfh.co.in','ganesh.sakhare@mycompany.net']
+for i in list:
+    i.split('@')[0]

@@ -1,0 +1,11 @@
+2025-06-28 15:50:01,328 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\satya\\AppData\\Roaming\\Python\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-28 15:50:01,329 - INFO - Using writeable comtypes cache directory: 'C:\Users\satya\AppData\Roaming\Python\Python312\site-packages\comtypes\gen'
+2025-06-28 15:50:31,023 - ERROR - Wikipedia error: An unknown error occured: "The "srsearch" parameter must be set.". Please report it on GitHub!
+2025-06-28 15:53:34,052 - ERROR - Music error: [WinError 3] The system cannot find the path specified: 'C:\\Music'
+2025-06-28 15:55:46,969 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\satya\\AppData\\Roaming\\Python\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-28 15:55:46,969 - INFO - Using writeable comtypes cache directory: 'C:\Users\satya\AppData\Roaming\Python\Python312\site-packages\comtypes\gen'
+2025-06-28 15:58:09,735 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\satya\\AppData\\Roaming\\Python\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-28 15:58:09,735 - INFO - Using writeable comtypes cache directory: 'C:\Users\satya\AppData\Roaming\Python\Python312\site-packages\comtypes\gen'
+2025-06-28 15:58:17,536 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\satya\\AppData\\Roaming\\Python\\Python312\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-06-28 15:58:17,536 - INFO - Using writeable comtypes cache directory: 'C:\Users\satya\AppData\Roaming\Python\Python312\site-packages\comtypes\gen'
+2025-06-28 16:03:56,744 - ERROR - Error in speech recognition: listening timed out while waiting for phrase to start
