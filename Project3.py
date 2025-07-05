@@ -57,7 +57,7 @@ def greet():
 def listen():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        print("Listening...")
+        speak("I am Listening You")
         r.adjust_for_ambient_noise(source, duration=1)
         try:
             audio = r.listen(source, timeout=5, phrase_time_limit=7)
@@ -70,7 +70,7 @@ def listen():
         print("You said:", command)
         return command.lower()
     except sr.UnknownValueError:
-        print("Sorry, I didn't catch that. Please say it again.")
+        speak("Sorry, I didn't catch that. Please say it again.")
     except sr.RequestError:
         speak("Unable to connect to the internet. Please check your connection.")
     return ""
@@ -106,7 +106,7 @@ def run_jarvis():
             speak(f"Playing {song} on YouTube.")
             pywhatkit.playonyt(song)
 
-        elif 'aaj tak' in command:    
+        elif 'aaj tak' in command:
             url = "https://www.youtube.com/watch?v=Nq2wYlWFucg"  # Aaj Tak
             streamlink_path = r"C:\Users\satya\AppData\Roaming\Python\Python312\Scripts\streamlink.exe"
             subprocess.call([streamlink_path, url, 'worst'])
