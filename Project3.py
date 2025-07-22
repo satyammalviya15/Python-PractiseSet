@@ -30,7 +30,6 @@ def gemini_chat(prompt_text):
     except Exception as e:
         return f"Error: {str(e)}"
 
-
 # Initialize Text to Speech engine
 engine = pyttsx3.init()
 engine.setProperty('rate', 170)
@@ -57,7 +56,7 @@ def greet():
 def listen():
     r = sr.Recognizer()
     with sr.Microphone() as source:
-        speak("I am Listening You")
+        print("I am Listening You")
         r.adjust_for_ambient_noise(source, duration=1)
         try:
             audio = r.listen(source, timeout=5, phrase_time_limit=7)
@@ -70,7 +69,7 @@ def listen():
         print("You said:", command)
         return command.lower()
     except sr.UnknownValueError:
-        speak("Sorry, I didn't catch that. Please say it again.")
+        print("Sorry, I didn't catch that. Please say it again.")
     except sr.RequestError:
         speak("Unable to connect to the internet. Please check your connection.")
     return ""
@@ -121,6 +120,7 @@ def run_jarvis():
             #     print("Now playing:", title)
             #     player = vlc.MediaPlayer(audio_url)
             #     player.play()
+
         elif 'search' in command:
             query = command.replace("search", "").strip()
             speak(f"Searching {query} on Google.")
@@ -129,6 +129,9 @@ def run_jarvis():
         elif 'open youtube' in command:
             speak("Opening YouTube.")
             pywhatkit.search("YouTube")
+
+        elif 'close' in command or 'minimize' in command :
+            pyautogui.hotkey('winleft','m')
 
         elif 'tell me a joke' in command or 'joke' in command:
             joke = pyjokes.get_joke(language='en', category='all')
